@@ -16,7 +16,7 @@ jobs:
           env: ${{secrets.ENV_PROD}}
       - name: Pull Docker image
         run: |
-          docker pull "node:lts-erbium"
+          docker pull "node:lts-slim"
           npm install && npm run build
 
       - name: deploy to server
