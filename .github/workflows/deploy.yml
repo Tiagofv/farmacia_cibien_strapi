@@ -28,4 +28,4 @@ jobs:
           FOLDER: "./"
           SERVER_IP: ${{ secrets.SERVER_IP }}
           USERNAME: ${{ secrets.USERNAME }}
-          SERVER_DESTINATION: "/farmacia_cibien_strapi"
+          SERVER_DESTINATION: "/home/ubuntu/farmacia_cibien_strapi"
