@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_office_locations",
+  "info": {
+    "name": "OfficeLocation",
+    "icon": "sort-numeric-up-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

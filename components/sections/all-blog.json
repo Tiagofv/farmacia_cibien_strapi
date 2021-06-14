@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_all_blogs",
+  "info": {
+    "name": "AllBlog",
+    "icon": "newspaper"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "pagesPerRecord": {
+      "type": "integer"
+    }
+  }
+}

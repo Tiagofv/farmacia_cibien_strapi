@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_recent_posts",
+  "info": {
+    "name": "recentPosts",
+    "icon": "blog"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    }
+  }
+}
