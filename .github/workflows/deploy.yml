@@ -1,31 +1,31 @@
-name: Deploy to production
+# name: Deploy to production
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  laravel-deploy-prod:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - run: 'echo "$env" > .env'
-        shell: bash
-        env:
-          env: ${{secrets.ENV_PROD}}
-      - name: Pull Docker image
-        run: |
-          docker pull "node:lts-slim"
-          npm install && npm run build
+# jobs:
+#   laravel-deploy-prod:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - uses: actions/checkout@v2
+#       - run: 'echo "$env" > .env'
+#         shell: bash
+#         env:
+#           env: ${{secrets.ENV_PROD}}
+#       - name: Pull Docker image
+#         run: |
+#           docker pull "node:lts-slim"
+#           npm install && npm run build
 
-      - name: deploy to server
-        uses: AEnterprise/rsync-deploy@v1.0
-        env:
-          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-e -c -r --delete"
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}
-          FOLDER: "./"
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-          USERNAME: ${{ secrets.USERNAME }}
-          SERVER_DESTINATION: "/home/ubuntu/farmacia_cibien_strapi"
+#       - name: deploy to server
+#         uses: AEnterprise/rsync-deploy@v1.0
+#         env:
+#           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+#           ARGS: "-e -c -r --delete"
+#           SERVER_PORT: ${{ secrets.SERVER_PORT }}
+#           FOLDER: "./"
+#           SERVER_IP: ${{ secrets.SERVER_IP }}
+#           USERNAME: ${{ secrets.USERNAME }}
+#           SERVER_DESTINATION: "/home/ubuntu/farmacia_cibien_strapi"
