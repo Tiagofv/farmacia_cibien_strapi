@@ -2,7 +2,8 @@
   "collectionName": "components_elements_office_locations",
   "info": {
     "name": "OfficeLocation",
-    "icon": "sort-numeric-up-alt"
+    "icon": "sort-numeric-up-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,6 +17,9 @@
     "address": {
       "type": "text",
       "required": false
+    },
+    "Whatsapp": {
+      "type": "string"
     }
   }
 }
