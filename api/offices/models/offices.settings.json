@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "offices",
+  "info": {
+    "name": "Offices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OfficeLocation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.office-location"
+    }
+  }
+}

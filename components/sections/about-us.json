@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_about_uses",
+  "info": {
+    "name": "About us",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "tiles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.abouts-us-tile"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "quote": {
+      "type": "text"
+    },
+    "quote_from": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    }
+  }
+}

@@ -42,7 +42,8 @@
         "sections.recent-posts",
         "sections.offices",
         "sections.all-blog",
-        "sections.lead-form-complete"
+        "sections.lead-form-complete",
+        "sections.about-us"
       ]
     },
     "status": {

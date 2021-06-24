@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/offices",
+      "handler": "offices.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/offices",
+      "handler": "offices.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/offices",
+      "handler": "offices.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
