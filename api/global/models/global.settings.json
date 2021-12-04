@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "globals",
   "info": {
-    "name": "Global"
+    "name": "Global",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "metadata": {
@@ -25,7 +27,8 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "notificationBanner": {
       "type": "component",
@@ -36,11 +39,6 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.navbar"
-    },
-    "footer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "layout.footer"
     }
   }
 }
